@@ -18,7 +18,7 @@ public class CreateOrderDTO {
     private String customerName;
 
     // Геттеры и сеттеры
-    public List<String> getItems() {
+    public @NotEmpty List<String> getItems() {
         return items;
     }
 

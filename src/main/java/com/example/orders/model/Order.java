@@ -1,5 +1,6 @@
 package com.example.orders.model;
 
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class Order {
         return items;
     }
 
-    public void setItems(List<Item> items) {
+    public void setItems(@NotEmpty List<String> items) {
         this.items = items;
     }
 
