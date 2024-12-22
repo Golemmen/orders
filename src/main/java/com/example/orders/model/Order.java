@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Order {
     private Long id;
-    private List<Item> items;
+    private @NotEmpty List<String> items;
     private Double totalPrice;
     private LocalDateTime orderDate;
 
